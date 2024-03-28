@@ -165,16 +165,18 @@ public class Main {
                                 System.out.println("Enter a new Student Id: ");
                                 studentId = scanner.next();
                             }
+                            scanner.nextLine();
                             System.out.println("Enter Last Name: ");
-                            String lastName = scanner.next();
+                            String lastName = scanner.nextLine();
                             System.out.println("Enter First Name: ");
-                            String firstName = scanner.next();
+                            String firstName = scanner.nextLine();
                             System.out.println("Enter Middle Initial: ");
                             String middleName = scanner.next();
                             System.out.println("Enter Sex: ");
                             String studentSex = scanner.next();
                             System.out.println("Enter Birthday (MM/DD/YYYY): ");
                             String studentBirthday = scanner.next();
+
                             while (!Student.isValidBirthday(studentBirthday)) {
                                 System.out.println("Invalid birthday format!");
                                 System.out.println("Enter Birthday (MM/DD/YYYY): ");
